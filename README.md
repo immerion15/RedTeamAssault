@@ -338,3 +338,20 @@ For organizations using this tool defensively:
 ---
 
 This tool provides a **complete red team automation framework** for educational purposes, combining industry-standard tools into a cohesive attack platform for authorized security testing.
+
+
+
+Select option: 1
+
+# Enter your network range
+Network (e.g., 192.168.1.0/24): 192.168.101.0/24
+
+# What happens:
+📡 Scanning network: 192.168.101.0/24
+  ↳ Command: nmap -sS -sV -O -p- --min-rate 1000 -T4 192.168.101.0/24
+
+# Example output:
+✅ Found 5 active hosts
+  ↳ 192.168.101.1 - 12 ports open - OS: Linux 2.6.32
+  ↳ 192.168.101.10 - 3 ports open - OS: Windows 7
+  ↳ 192.168.101.20 - 8 ports open - OS: Linux 3.13
